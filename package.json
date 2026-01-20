@@ -1,14 +1,21 @@
-
 {
-  "name": "pasherbazar-honey-nuts",
-  "version": "1.0.0",
+  "name": "copy-of-pasherbazar---authentic-honey-&-nuts",
   "private": true,
-  "description": "Premium Honey & Nuts eCommerce platform",
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "echo 'Static site build complete'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   }
 }
