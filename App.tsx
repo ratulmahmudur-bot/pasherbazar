@@ -68,7 +68,7 @@ const App: React.FC = () => {
         return (
           <div className="pt-8">
             <BrandStory />
-            <div className="max-w-7xl mx-auto px-4 py-24 text-center">
+            <div className="max-w-7xl mx-auto px-4 py-24 text-center bg-white">
               <h3 className="text-4xl lg:text-5xl font-serif font-bold text-oak-900 mb-8">Our Sourcing Standards</h3>
               <p className="max-w-4xl mx-auto text-oak-500 text-lg lg:text-xl leading-relaxed mb-16 px-4">
                 We believe in full transparency. Every jar of Pasherbazar is traceable back to its source. 
@@ -77,33 +77,49 @@ const App: React.FC = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
                 {/* Purity First Card */}
-                <div className="bg-oak-100/50 p-6 rounded-[2.5rem] transition-all hover:translate-y-[-4px]">
-                  <div className="bg-white p-10 rounded-[2rem] shadow-sm flex flex-col items-center h-full">
-                    <div className="text-5xl mb-6">🍯</div>
-                    <h4 className="text-xl font-bold text-oak-900 mb-3">Purity First</h4>
-                    <p className="text-oak-500 text-sm leading-relaxed max-w-[200px] mx-auto">
+                <div className="bg-oak-100/60 p-5 rounded-[3rem] transition-all hover:translate-y-[-4px]">
+                  <div className="bg-white px-8 py-12 rounded-[2.5rem] shadow-sm flex flex-col items-center h-full">
+                    <div className="mb-8">
+                      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M48 20C48 11.1634 40.8366 4 32 4H28C19.1634 4 12 11.1634 12 20V40C12 48.8366 19.1634 56 28 56H32C40.8366 56 48 48.8366 48 40V20Z" fill="#A16207" />
+                        <path d="M48 24H12V32C12 36.4183 15.5817 40 20 40H40C44.4183 40 48 36.4183 48 32V24Z" fill="#EAB308" />
+                        <circle cx="30" cy="14" r="4" fill="#FDE047" />
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-bold text-oak-900 mb-4">Purity First</h4>
+                    <p className="text-oak-400 text-sm leading-relaxed max-w-[240px] mx-auto text-center">
                       Unfiltered, unheated, and never mixed with syrups or fillers.
                     </p>
                   </div>
                 </div>
 
                 {/* Direct Trade Card */}
-                <div className="bg-oak-100/50 p-6 rounded-[2.5rem] transition-all hover:translate-y-[-4px]">
-                  <div className="bg-white p-10 rounded-[2rem] shadow-sm flex flex-col items-center h-full">
-                    <div className="text-5xl mb-6">🌰</div>
-                    <h4 className="text-xl font-bold text-oak-900 mb-3">Direct Trade</h4>
-                    <p className="text-oak-500 text-sm leading-relaxed max-w-[200px] mx-auto">
+                <div className="bg-oak-100/60 p-5 rounded-[3rem] transition-all hover:translate-y-[-4px]">
+                  <div className="bg-white px-8 py-12 rounded-[2.5rem] shadow-sm flex flex-col items-center h-full">
+                    <div className="mb-8">
+                      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 50C41.0457 50 50 41.0457 50 30C50 18.9543 41.0457 10 30 10C18.9543 10 10 18.9543 10 30C10 41.0457 18.9543 50 30 50Z" fill="#78350F" />
+                        <path d="M30 50C41.0457 50 50 41.0457 50 30H10C10 41.0457 18.9543 50 30 50Z" fill="#B45309" />
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-bold text-oak-900 mb-4">Direct Trade</h4>
+                    <p className="text-oak-400 text-sm leading-relaxed max-w-[240px] mx-auto text-center">
                       Working directly with farmers to ensure fair wages and sustainable harvests.
                     </p>
                   </div>
                 </div>
 
                 {/* Triple-Tested Card */}
-                <div className="bg-oak-100/50 p-6 rounded-[2.5rem] transition-all hover:translate-y-[-4px]">
-                  <div className="bg-white p-10 rounded-[2rem] shadow-sm flex flex-col items-center h-full">
-                    <div className="text-5xl mb-6">🛡️</div>
-                    <h4 className="text-xl font-bold text-oak-900 mb-3">Triple-Tested</h4>
-                    <p className="text-oak-500 text-sm leading-relaxed max-w-[200px] mx-auto">
+                <div className="bg-oak-100/60 p-5 rounded-[3rem] transition-all hover:translate-y-[-4px]">
+                  <div className="bg-white px-8 py-12 rounded-[2.5rem] shadow-sm flex flex-col items-center h-full">
+                    <div className="mb-8">
+                      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 4L10 12V28C10 41.2548 18.5262 53.5358 30 56C41.4738 53.5358 50 41.2548 50 28V12L30 4Z" fill="#60A5FA" />
+                        <path opacity="0.5" d="M30 4L10 12V28C10 33.1554 11.3 38.1565 13.5937 42.5H46.4062C48.7 38.1565 50 33.1554 50 28V12L30 4Z" fill="white" />
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-bold text-oak-900 mb-4">Triple-Tested</h4>
+                    <p className="text-oak-400 text-sm leading-relaxed max-w-[240px] mx-auto text-center">
                       Every batch is tested for moisture, pollen, and chemical residues.
                     </p>
                   </div>
